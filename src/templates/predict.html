@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>{{ prediction }}</title>
+</head>
+<body>
+    {% if prediction is not none %}
+        {% if prediction == 'ham' %}
+            <div class="predict">
+                <h1 class="result">Safe. Is not a spam</h1>
+                <img src="https://media.tenor.com/f_saBHiUTz0AAAAM/cute-cat.gif" alt="">
+            </div>
+        {% else %}
+            <div class="predict">
+                <h1 class="result">This totally a SPAM!!! 💀💀💀🚨🚨🚨</h1>
+                <img src="https://media.tenor.com/wGNPg736OYgAAAAC/mr-incredible-mr-incredible-uncanny.gif" alt="">
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <a class="btn" href="{{url_for('index')}}">Try Again</a>
+</body>
+</html>
