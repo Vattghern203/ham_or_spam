@@ -3,10 +3,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import GaussianNB
 import pickle
 
-with open('src/model.pkl', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     gnb = pickle.load(f)
 
-with open('src/vec.pkl', 'rb') as file:
+with open('vec.pkl', 'rb') as file:
     vectorizer = pickle.load(file)
 
 app = Flask(__name__)
