@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/**/*": {
+      "server": {
         "runtime": "python3.8",
         "memory": 512,
         "maxDuration": 10
@@ -8,12 +8,9 @@
     },
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/app.py"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/"
+        "dest": "/app.py"
       }
     ]
   }
+  
