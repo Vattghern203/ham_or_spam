@@ -65,6 +65,10 @@ form {
     transform: translateY(2px);
 }
 
+.btn:active {
+    transform: translateY(3.5px);
+}
+
 textarea {
     resize: none;
     border-radius: 2rem;
