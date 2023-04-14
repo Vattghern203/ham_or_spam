@@ -1,9 +1,7 @@
 {
     "functions": {
-      "server": {
-        "runtime": "python3.8",
-        "memory": 512,
-        "maxDuration": 10
+      "api": {
+        "runtime": "python3.9"
       }
     },
     "routes": [
@@ -13,4 +11,3 @@
       }
     ]
   }
-  
